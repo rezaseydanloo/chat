@@ -1,0 +1,19 @@
+Sign-up
+> {username, password}
+< {success, token} | {failure}
+
+Login
+> {username, password}
+< {success, token} | {failure}
+
+Logout
+> {token}
+< {success} | {failure}
+
+Set Bio
+> {token, newBio}
+< {success} | {failure}
+
+Get Bio
+> {token}
+< {success, bio} | {failure}
